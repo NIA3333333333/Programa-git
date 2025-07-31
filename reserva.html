@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar Aula</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Formulario de Reserva</h1>
+  </header>
+
+  <main>
+    <form class="formulario" onsubmit="enviarReserva(event)">
+      <label for="aula">Aula:</label>
+      <select id="aula" required>
+        <option value="">Seleccione un aula</option>
+        <option value="101">Aula 101</option>
+        <option value="202">Aula 202</option>
+        <option value="305">Aula 305</option>
+      </select>
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" required>
+
+      <label for="horaInicio">Hora de inicio:</label>
+      <input type="time" id="horaInicio" required>
+
+      <label for="horaFin">Hora de fin:</label>
+      <input type="time" id="horaFin" required>
+
+      <label for="motivo">Motivo de la reserva:</label>
+      <textarea id="motivo" rows="3" required></textarea>
+
+      <button type="submit">Enviar reserva</button>
+    </form>
+
+    <br>
+    <a href="index.html">← Volver al inicio</a>
+  </main>
+
+  <footer>
+    <p>© 2025 Sistema de Reservas - Zuly 💜</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
